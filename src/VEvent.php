@@ -1,6 +1,5 @@
 <?php
 namespace ChirpyICal;
-require 'iCal.php';
 
 
 /**

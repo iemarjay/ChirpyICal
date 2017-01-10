@@ -7,9 +7,10 @@
  * Author: iemarjay <emarjay921@gmail.com>
  */
 
-require __DIR__. '/src/VEvent.php';
+require __DIR__.'/vendor/autoload.php';
+
 $ical = new ChirpyICal\VEvent;
 
-$ical->setStartDate('2016/12/3 4:00');
+var_dump($ical->setStartDate('2016/12/3 4:00'));
 
 
