@@ -19,7 +19,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "ChirpyICal\\": "src/"
+            "ChirpyICal\\": "src/",
+            "Test\\": "test/"
         }
     },
     "require-dev": {
