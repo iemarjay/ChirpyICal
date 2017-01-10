@@ -1,0 +1,26 @@
+{
+    "name": "iemarjay/chirpy-ical",
+    "description": "A package for generating RFC 2445 iCalendar specification, strings, can be used for vevent, vtodo, vjournal",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joseph Emmanuel",
+            "email": "emarjay921@gmail.com"
+        }
+    ],
+    "keywords": [
+        "ical",
+        "php calendar",
+        "icalendar",
+        "ics",
+        "calendar",
+        "itip"
+    ],
+    "autoload": {
+        "psr-4": {
+            "ChirpyICal\\": "src/"
+        }
+    },
+    "require": {}
+}
