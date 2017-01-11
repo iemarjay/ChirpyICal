@@ -21,7 +21,12 @@
         "psr-4": {
             "ChirpyICal\\": "src/",
             "Test\\": "test/"
-        }
+        },
+
+        "files":[
+            "src/utility/constants.php",
+            "src/utility/functions.php"
+        ]
     },
     "require-dev": {
         "phpunit/phpunit": "5.*"

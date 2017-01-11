@@ -9,8 +9,22 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-$ical = new ChirpyICal\VEvent;
+$vevent = new ChirpyICal\VEvent;
+$vtodo  = new ChirpyICal\VTodo;
+$org  = new ChirpyICal\EventOrganizer;
 
-var_dump($ical->setStartDate('2016/12/3 4:00'));
+$vevent->setStartDate('+2 Days');
+$vtodo->setStartDate('+2 Days');
+$vtodo->setDueDateTime('+2 Days');
+$vtodo->setCompleted('+5 Days');
+
+$vtodo->setOrganizer()->setDisplayName('today away')->setSentBy('today away');
+
+$vevent->generateICal();
+$vtodo->generateICal();
+
+
+echo "<pre>";
+var_dump($vevent->toString(), $vtodo->toString());
 
 
